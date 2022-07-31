@@ -1,0 +1,483 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Mulish', sans-serif; */
+}
+
+.clear {
+    clear: both;
+}
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 46.5px;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 46.5px;
+    padding: 0px 24px;
+    font-size: 15px;
+    /* font-weight: 900; */
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover {
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav li {
+    /* padding: 0px 16px; */
+    display: block;
+}
+
+#nav .subnav li a {
+    color: #000;
+    line-height: 36px;
+    padding: 0px 16px;
+}
+
+#nav .icon-down {
+    font-size: 12px;
+    padding: 0px 4px;
+}
+
+#header #search-btn {
+    float: right;
+    line-height: 46.5px;
+    padding: 0px 24px;
+    color: #fff;
+    /* font-size: 16px; */
+}
+
+#header #search-btn:hover {
+    background-color: rgb(244, 67, 54);
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/assets/images/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .slider-title {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+#slider .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .subtitle {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#content .member-list {
+    padding: 47px 0px;
+}
+
+#content .content-table {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#content .content-title {
+    font-size: 30px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#content .slogan {
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 25px;
+}
+
+#content .info-band {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content .member {
+    float: left;
+    width: 33.333%;
+}
+
+#content .name {
+    margin: 15px 0px;
+}
+
+#content .img-member {
+    width: 153px;
+}
+
+#content .content-tour {
+    background-color: #000;
+}
+
+#content .content-tour .content-title {
+    color: #fff;
+}
+
+#content .content-tour .slogan {
+    color: #fff;
+}
+
+#content .content-tour .table-month {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+#content .content-tour .month-ticket {
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    text-align: left;
+    padding: 9px 16px;
+    font-size: 15px;
+}
+
+#content .month-ticket .sout-out {
+    color: #fff;
+    padding: 4px 8px;
+    background-color: #f44336;
+    margin-left: 16px;
+}
+
+#content .month-ticket .quantity {
+    float: right;
+    color: #fff;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-right: 16px;
+}
+
+.ticket-list {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 32px 0px;
+}
+
+.ticket-place {
+    float: left;
+    width: 33.3333%;
+}
+
+.img-place {
+    margin-left: 8px;
+    width: 246px;
+    display: block;
+    opacity: 1;
+}
+
+.img-place:hover {
+    opacity: 0.6;
+}
+
+.ticket-content {
+    background-color: #fff;
+    margin: 0px 8px;
+    padding: 17px 16px;
+    text-align: left;
+    display: block;
+
+}
+
+.name-place {
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+.date-place {
+    font-size: 15px;
+    color: #757575;
+}
+
+.desc-place {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    line-height: 1.4;
+}
+
+
+.btn-buy {
+    display: block;
+    width: 110px;
+    top: 38px;
+    padding: 10px 16px;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    border: 0px;
+}
+
+.btn-buy:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-content {
+    margin-top: 47px;
+    text-align: left;
+}
+
+.contact-form {
+    /* float: left; */
+    /* display: inline-block; */
+}
+
+.address {
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.address i {
+    padding-right: 16px;
+}
+
+.contact-form {
+    /* display: inline-block; */
+    width: 50%;
+    float: right;
+}
+
+.form-name,
+.form-email {
+    width: 50%;
+    float: left;
+}
+
+.input-name,
+.input-email,
+.input-mess {
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-row-1 {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.form-name,
+.form-email {
+    padding: 0px 8px;
+}
+
+.contact-row-2 {
+    margin-top: 8px;
+}
+
+.input-mess {
+    width: 100%;
+}
+
+.submit-btn {
+    display: block;
+    margin-top: 16px;
+    float: right;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: 0px;
+}
+
+.submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact .content-table {
+    padding-bottom: 106px !important;
+}
+
+.map {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.icon-net {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.signal {
+    font-size: 15px;
+    margin: 15px 0px;
+    /* color: #f1f1f1; */
+    opacity: 0.6;
+}
+
+.w3 {
+    color: #000;
+}
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#modal.open {
+    display: block;
+}
+
+.modal-table {
+    background-color: #fff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: 15px;
+    animation: modalFaceIn ease 0.4s;
+}
+
+
+.modal-form {
+    padding: 0px 16px;
+}
+
+.modal-close {
+    float: right;
+    padding: 16px 16px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.modal-close:hover,
+.modal-buy:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-heading {
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 47px 0px;
+    text-align: center;
+}
+
+.ticket-quantity,
+.sent-to {
+    padding: 20px 0px 10px;
+    display: block;
+}
+
+.input-quantity,
+.input-modal-email {
+    display: block;
+    padding: 8px;
+    width: 100%;
+}
+
+.modal-buy {
+    background-color: #009688;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin: 16px 0px;
+}
+
+.modal-footer {
+    padding: 15px 0px;
+    text-align: right;
+}
+
+.footer-help {
+    color: #2196F3;
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-200px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
